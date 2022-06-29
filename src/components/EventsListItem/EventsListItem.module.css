@@ -1,0 +1,45 @@
+.Wrapper {
+  padding: 26px 20px;
+  transition: background-color 200ms;
+  display: flex;
+  gap: 20px;
+
+  border-bottom: 1px solid rgba(62, 118, 244, 0.14);
+  box-shadow: inset 0px -5px 4px -4px rgba(62, 118, 244, 0.14);
+}
+
+.Wrapper:last-of-type {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.Wrapper:hover {
+  background-color: #f4f0f3;
+}
+
+.Avatar {
+  width: 37px !important;
+  height: 37px !important;
+  border-radius: 9999px;
+}
+
+.Details {
+  min-width: 0;
+}
+
+.Date {
+  font-size: 12px;
+  color: #9998a7;
+  margin-top: 10px;
+}
+
+.Message {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.Wrapper:hover .Message {
+  text-overflow: revert;
+  white-space: revert;
+}
